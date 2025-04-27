@@ -1,0 +1,199 @@
+/*CSS Doc*/
+
+/*Universal Styles*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url("resources/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: rgb(235, 171, 76);
+  margin-right: 30px;
+}
+
+.intro {
+  margin-top: -50px;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0px;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-style: 300;
+}
+
+p {
+  font-family: "Tuffy", sans-serif;
+  font-style: 100;
+}
+
+em {
+  font-family: "Tuffy", sans-serif;
+}
+
+nav {
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-style: normal;
+  margin-bottom: 300px;
+}
+
+.main p {
+  text-align: center;
+}
+
+p em {
+  font-size: 20px;
+  font-style: 100;
+}
+
+header nav li {
+  text-align: center;
+  list-style: none;
+  height: 35px;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(235, 171, 76);
+}
+
+/*Header*/
+
+.main {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 50px;
+}
+
+/*Section*/
+
+section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(235, 171, 76, 30%);
+}
+
+.nav-left {
+  flex-basis: 3%;
+}
+
+.nav-left nav {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  margin-left: -30px;
+  padding: 10px;
+}
+
+.nav-left li {
+  list-style: none;
+}
+
+.nav-left a {
+  font-size: medium;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.content-right {
+  flex-basis: 97%;
+}
+
+section h2 {
+  font-size: 25px;
+}
+
+section h3 {
+  text-align: left;
+  font-size: 20px;
+}
+
+section h3 em {
+  text-align: left;
+  font-size: 13px;
+}
+
+section p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+section em {
+  font-size: 15px;
+}
+
+section #work_exp,
+#skills,
+#education,
+#contact {
+  padding: 30px 0px;
+
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+}
+
+div .title {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+div .info {
+  flex-basis: 70%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info div {
+  width: 300px;
+  height: 200px;
+  margin: 10px 30px;
+}
+
+#contact .info div {
+  width: 250px;
+  margin: 10px 25px;
+  margin-left: 35px;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  height: 50px;
+  padding-top: 1px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+footer p {
+  font-size: 10px;
+}
