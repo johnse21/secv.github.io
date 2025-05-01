@@ -93,16 +93,16 @@ header nav a {
 /*Section*/
 
 section {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 14fr;
   background-color: rgba(235, 171, 76, 30%);
 }
 
-.nav-left {
+/* .nav-left {
   flex-basis: 3%;
-}
+} */
 
-.nav-left nav {
+#sec_nav {
   position: sticky;
   top: 0;
   background-color: rgb(255, 255, 255);
@@ -111,19 +111,19 @@ section {
   padding: 10px;
 }
 
-.nav-left li {
+#sec_nav li {
   list-style: none;
 }
 
-.nav-left a {
+#sec_nav a {
   font-size: medium;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-.content-right {
+/* .content-right {
   flex-basis: 97%;
-}
+} */
 
 section h2 {
   font-size: 25px;
@@ -148,14 +148,20 @@ section em {
   font-size: 15px;
 }
 
+.content {
+  margin-left: 50px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr auto / auto;
+}
+
 section #work_exp,
 #skills,
 #education,
 #contact {
   padding: 30px 0px;
 
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   color: rgb(255, 255, 255);
 }
 
